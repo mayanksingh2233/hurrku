@@ -26,7 +26,11 @@
 
    <br>
    <br>
-   {{ prediction_text }}
+	 {% if prediction_text == 1%}
+	<h2 style="color:red;">Purchased</h2>
+	{% elif prediction == 0%}
+	<h2 style="color:blue;">Not Purchased (It is a Ham)</h2>
+	{% endif %}
 
  </div>
 
